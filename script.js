@@ -56,4 +56,16 @@ $(function() {
     //5
     let text5 = $("#text5");
     $(text5).css("font-size", "30px");
+
+    
+    //イベント登録・実行
+    $("#updateTarget1").on("mouseover", function() {
+        $(this).text("マウスオーバーしました。");
+    });
+    $("#updateTarget1").on("click", function() {
+        $(this).text("クリックしました。");
+    });
+    $("#updateTarget1").on("dblclick", function() {
+        $(this).text("ダブルクリックしました。");
+    });
 });

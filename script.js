@@ -68,4 +68,40 @@ $(function() {
     $("#updateTarget1").on("dblclick", function() {
         $(this).text("ダブルクリックしました。");
     });
+
+    //Node追加・削除
+    let ol = $("#ol");
+    let addNode1 = $("<li>").text("追加された文字列");
+    ol.prepend(addNode1);
+
+    let addNode2 = $("<li>").text("さらに追加された文字列");
+    ol.append(addNode2);
+
+    $("#facebook").remove();
+
+    /*
+        練習問題
+        以下のulタグを用意して
+        <ul id="sports">
+            <li>野球</li>
+            <li>サッカー</li>
+        </ul>
+        
+        1.「バスケ」をリストの最後に追加
+        2.「テニス」をリストの最初に追加
+        3.「サッカー」をリストから削除
+    */
+
+    let ul = $("#sports")
+
+    //1
+    let add = $("<li>").text("バスケ");
+    ul.prepend(add);
+
+    //2
+    let add1 = $("<li>").text("テニス");
+    ul.append(add1);
+
+    //3
+    $("#soccer").remove();
 });

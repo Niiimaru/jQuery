@@ -1,0 +1,18 @@
+/* liタグの数を取得してアラートに出力・準備 */
+.list{
+    margin: 0 auto 0 auto;
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+}
+.a {
+    height: 100px;
+    width: 100px;
+    background-color: #3E2D21;
+    margin-right: 10px;
+}
+
+  /* cssクラスの付けはがし・準備 */
+  p.is-active {
+    color: blue;
+}

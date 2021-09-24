@@ -105,3 +105,70 @@ $(function() {
     //3
     $("#soccer").remove();
 });
+
+
+/*練習問題 初級
+ウィンドサイズに変数を入れてアラート出力
+*/ 
+
+const win_width = window.innerWidth;
+alert(win_width);
+
+//2つの変数を引いてアラート出力
+let num1 = 5;
+let num2 = 8;
+alert(num2 - num1);
+
+// //文字列を連結
+// let text1 = "リンゴ・グレープ";
+// let text2 = "バナナ";
+// alert(text1 + text2);
+
+//連結した文字列から特定の文字列を取り除く
+let text1 = "リンゴ・グレープ";
+let text2 = "バナナ";
+let my_fruits = (text1 + text2).replace("グレープ", "");
+
+alert(my_fruits);
+
+//５秒後にアラート出力
+setTimeout( function() {
+    alert('5秒経過');
+}, 5000);
+
+//配列から値取得
+let fruits = ["リンゴ", "グレープ", "バナナ"];
+alert(fruits[1]);
+
+//liタグの数を取得してアラートに出力
+$(function() {
+    alert("liタグの数は" + $('.a').length + "個です。");
+});
+
+//cssクラスの付けはがし
+//自分の回答×
+// $(function() {
+//     $("p").on("click", function() {
+//         $(this).css("color", "blue");
+//     });
+// });
+//解答
+$(function() {
+    $('p').click(function() {
+      $(this).toggleClass('is-active'); //クラスの付けはがしには.toggleClass()を使う
+    });
+  })
+  
+  //要素をフェードイン
+$(function() {
+    $('.trigger').click(function() {
+        $('.target').fadeIn("2500"); //display: none; が付与されている要素のフェードインは fadeIn()
+    });
+})
+
+//要素をフェードアウト
+$(function() {
+    $('.triggerr').click(function() {
+        $('.targett').fadeOut("slow");
+    });
+})
